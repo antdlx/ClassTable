@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/mon"
+        layout="@layout/colum"/>
+    <include
+        android:id="@+id/tue"
+        layout="@layout/colum"/>
+    <include
+        android:id="@+id/wen"
+        layout="@layout/colum"/>
+    <include
+        android:id="@+id/thu"
+        layout="@layout/colum"/>
+    <include
+        android:id="@+id/fri"
+        layout="@layout/colum"/>
+    <include
+        android:id="@+id/sat"
+        layout="@layout/colum"/>
+    <include
+        android:id="@+id/sun"
+        layout="@layout/colum"/>
+</merge>

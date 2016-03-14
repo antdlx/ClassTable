@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <HorizontalScrollView
+        android:id="@+id/top_horizontalscrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/topbar"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/left_scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/leftbar"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.antdlx.classtable.YScrollView
+            android:id="@+id/yscrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/table_content"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </com.antdlx.classtable.YScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

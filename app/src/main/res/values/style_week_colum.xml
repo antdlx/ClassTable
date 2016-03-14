@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_my_week_colum">
+        <item name="android:layout_width">@dimen/colum_width</item>
+        <item name="android:layout_height">640dp</item>
+    </style>
+</resources>
