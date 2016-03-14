@@ -135,10 +135,10 @@ public class MainActivity extends AppCompatActivity{
         String text="Android开发与实践@W3502";
         addView(1,1,2,text);
         addView(7,2,3,text);
-        addView(5,9,10,text);
+        addView(5,3,4,text);
         addView(4,2,3,text);
         addView(3,5,5,text);
-        addView(4,10,12,text);
+        addView(6,7,8,text);
     }
 
 }
