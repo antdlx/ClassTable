@@ -13,10 +13,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity{
 
+    /**
+     * 每个格子的宽度
+     */
     private int gridWidth=0;
+    /**
+     * 每个格子的高度
+     */
     private int gridHeight = 0;
     private RelativeLayout exLayout=null;
     private RelativeLayout layout = null;
+    /**
+     * 每天有几节课
+     */
     private final int CLASS_COUNT=8;
     private YScrollView yScrollView=null;
     private HorizontalScrollView top_horizontalScrollView=null;
@@ -33,6 +42,11 @@ public class MainActivity extends AppCompatActivity{
         left_scrollview = (ScrollView) findViewById(R.id.left_scrollview);
     }
 
+    /**
+     * 简单粗暴的实现滑动的联动
+     * @param ev
+     * @return
+     */
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         yScrollView.dispatchTouchEvent(ev);
